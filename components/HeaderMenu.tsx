@@ -1,4 +1,4 @@
-import { Menu, Group, Center, Burger, Container, Text } from '@mantine/core';
+import { Menu, Group, Center, Burger, Container, Text, Drawer, Flex } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
 import classes from './../styles/HeaderMenu.module.css';
@@ -70,6 +70,11 @@ export function HeaderMenu() {
           </Group>
           <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
         </div>
+        <Drawer opened={opened} onClose={toggle} padding="md" size="md">
+          <Flex direction="column" gap={10}>
+            {items}
+          </Flex>
+        </Drawer>
       </Container>
     </header>
   );

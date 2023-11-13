@@ -15,7 +15,7 @@ export async function getPosts() {
   return db;
 }
 
-export async function getStaticProps({ params }: any) {
+export async function getStaticProps() {
   const posts = await getPosts();
 
   return {
