@@ -30,7 +30,6 @@ const nextConfig = {
   },
 
   // export to docs folder so that github pages can serve it
-  distDir: 'docs',
 }
 
 export default nextConfig
