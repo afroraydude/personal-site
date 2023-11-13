@@ -13,5 +13,7 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
     'import/extensions': 'off',
+    'react/jsx-curly-brace-presence': 'off',
+    'max-len': 'off',
   },
 };

@@ -1,0 +1,10 @@
+.title {
+  font-size: 72px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.description {
+  padding: 0 30px;
+  text-align: justify;
+}
