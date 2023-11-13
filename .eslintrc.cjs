@@ -27,5 +27,6 @@ module.exports = {
     'no-empty-pattern': 'off',
     'eol-last': 'off',
     'no-trailing-spaces': 'off',
+    'global-require': 'off',
   },
 };
