@@ -4,16 +4,16 @@ import styles from '../styles/Home.module.css';
 
 const links = [
   {
-    title: 'Non-GMU Website',
-    url: 'https://raythomas.dev',
-  },
-  {
     title: 'GitHub',
     url: 'https://github.com/afroraydude',
   },
   {
-    title: 'Development Blog',
-    url: 'https://afroraydude.com',
+    title: 'Projects',
+    url: '/projects',
+  },
+  {
+    title: 'Blog',
+    url: '/blog',
   },
 ];
 
@@ -25,15 +25,16 @@ export default function HomePage() {
         <Text
           className={styles.title}
           variant="gradient"
-          gradient={{ from: 'rgba(0, 132, 255, 1)', to: 'green', deg: 90 }}
+          gradient={{ from: 'violet', to: 'cyan', deg: 90 }}
         >
           {' '}
           I Am Ray Thomas
         </Text>
         <Text className={styles.description}>
-          I am a full time student at George Mason University studying Computer Science. I like experimenting with
-          various software and hardware projects. I also like to play video games and watch anime. I am currently
-          working on a few projects, including a few video games and some web applications.
+          Full Stack Software Engineer, Game Developer, and Student
+        </Text>
+        <Text>
+          React, Next.js, TypeScript, Node.js, MongoDB, PostgreSQL, Rust, C#, C++, Unity, Unreal
         </Text>
       </Flex>
       <Flex align={'center'} justify={'center'} direction={'row'} wrap={'wrap'} mt={50}>
@@ -43,7 +44,9 @@ export default function HomePage() {
           </Anchor>
         ))}
       </Flex>
-      <ColorSchemeToggle />
+      {
+        //<ColorSchemeToggle />
+      }
     </Container>
   );
 }

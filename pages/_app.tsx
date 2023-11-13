@@ -4,18 +4,20 @@ import Head from 'next/head';
 import { MantineProvider } from '@mantine/core';
 import { theme } from '../theme';
 import '../styles/global.css';
+import { HeaderMenu } from '@/components/HeaderMenu';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <MantineProvider theme={theme}>
       <Head>
-        <title>Mantine Template</title>
+        <title>Ray Thomas</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
         <link rel="shortcut icon" href="/favicon.svg" />
       </Head>
+      <HeaderMenu />
       <Component {...pageProps} />
     </MantineProvider>
   );
