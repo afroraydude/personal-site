@@ -2,10 +2,10 @@ import { remark } from 'remark';
 import html from 'remark-html';
 //import fs from 'fs';
 import path from 'path';
+import fs from 'fs';
 import { Container, Title } from '@mantine/core';
 
 export async function getPostBySlug(slug: string) {
-  const fs = require('fs/promises');
   // go to the blog posts directory and get the database file
   // file is /projectpath/blogposts/db.json
   const postsDirectory = path.join(process.cwd(), 'blogposts');
@@ -47,7 +47,6 @@ export async function getStaticProps({ params }: any) {
 }
 
 export async function getStaticPaths() {
-  const fs = require('fs/promises');
   // go to the blog posts directory and get the database file
   // file is /projectpath/blogposts/db.json
   // go to the blog posts directory and get the database file
