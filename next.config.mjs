@@ -4,6 +4,11 @@ import exp from 'constants'
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
+  reactStrictMode: false,
+  
+  // export
+  output: 'export',
+
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   trailingSlash: false,
  
