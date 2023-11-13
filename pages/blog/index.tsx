@@ -1,9 +1,10 @@
 import { Container, Title, Text, Timeline, Anchor } from "@mantine/core";
-import fs from 'fs';
+//import fs from 'fs';
 import path from 'path';
 import classes from './../../styles/Blog.module.css';
 
 export async function getPosts() {
+  const fs = require('fs/promises');
   // go to the blog posts directory and get the database file
   // file is /projectpath/blogposts/db.json
   const postsDirectory = path.join(process.cwd(), 'blogposts');
